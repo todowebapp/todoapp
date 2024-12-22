@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div id="canvas">
+<body onload="onLoad()">
+    <div id="header">
         <h1>To Do</h1>
     </div>
+    <div id="sideBar">
+        <h2>Listen</h2>
+        <button>Liste hinzufügen</button>
+        <div id="lists">
+            <!-- to do lists here -->
+        </div>
+    </div>
+    <div id="canvas">
+        <!-- empty at start -->
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
