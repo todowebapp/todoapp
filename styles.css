@@ -1,0 +1,44 @@
+/* Allgemeine Stile */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Vollbildhöhe */
+}
+
+/* Header */
+#header {
+    background-color: #f4f4f4; /* Hintergrundfarbe (anpassbar) */
+    height: 10%; /* 10 % der Bildschirmhöhe */
+    width: 100%; /* Ganze Breite */
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Schatten */
+}
+
+/* SideBar */
+#sideBar {
+    background-color: #ddd; /* Hintergrundfarbe (anpassbar) */
+    width: 20%; /* 20 % der Breite */
+    height: calc(90%); /* 90 % der verbleibenden Höhe */
+    position: fixed; /* Fixiert am linken Rand */
+    top: 10%; /* Ab Anfang des Headers */
+    left: 0; /* Linksbündig */
+    overflow-y: auto; /* Falls der Inhalt zu groß ist, scrollbar */
+    padding: 1rem; /* Innenabstand */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Optional: Schatten */
+}
+
+/* Canvas */
+#canvas {
+    background-color: #fff; /* Hintergrundfarbe (anpassbar) */
+    margin-left: 20%; /* Platz für die Sidebar */
+    margin-top: 10%; /* Platz für den Header */
+    height: calc(90%); /* Höhe abzüglich Header */
+    width: calc(80%); /* Breite abzüglich Sidebar */
+    overflow-y: auto; /* Falls der Inhalt zu groß ist, scrollbar */
+    padding: 1rem; /* Innenabstand */
+}
